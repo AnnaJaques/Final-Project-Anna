@@ -1,0 +1,644 @@
+/*  
+Author: Anna Jaques 
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3, ul, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #f6eee4;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.centerText {
+	text-align: center;
+}
+
+/*Style rule for mobile viewport*/
+
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile {
+  display: block;
+}
+.tab-desk #nav-links {
+  display: none;
+}
+
+.desktop #nav-links {
+  display: none;
+}
+
+#nav-links {
+  display: none;
+}
+
+/*Style rules for header area*/
+.mobile h1 {
+  text-align: center;
+  padding: 2%;
+}
+
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 {
+  font-family: 'Emblema One', cursive;
+  margin: 2% 0 0 3%;
+}
+
+.mobile h3 {
+    font-family: 'Lora', serif;
+}
+
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+ 
+.mobile-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #f6eee4;
+    padding: 2%;
+}
+ 
+.nav-icon div { 
+    height: 40px;
+    width: 40px;
+    color: #2a1f14; 
+} 
+
+
+/*Style rules for navigation area*/
+nav {
+  background-color: #2a1f14;
+}
+
+
+/*Style rules for main content*/
+main {
+  padding: 2%;
+  font-family: Verdana, Arial, sans-serif;
+  font-family: 'Lora', serif;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style: square;
+}
+
+.link {
+  text-decoration: none;
+  color: #4d3319;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #c5a687;
+  position: sticky;
+}
+
+/*FIGURE AND FIGCAPTION for Components Quiz STYLE*/
+figure {
+  border: 4px solid #2a1f14;
+  box-shadow: 6px 6px 10px #c5a687;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #2a1f14;
+  text-align: center;
+  font-size: 2em;
+  text-shadow: 6px 6px 10px #c5a687;
+  font-weight: bold;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 60%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*Slightly larger "You can reach us at:* text/
+.ReachUs {
+	font-size: 2em;
+}
+
+/*Phone number on contact page format*/
+.phoneNumber {
+	text-decoration: none;
+	color: #4d3319;
+	font-weight: bold;
+}
+
+/*java answers format*/
+#questions p { 
+    cursor: pointer;
+}
+ 
+#answer {
+    text-align: center;
+    font-weight: bold;
+    width: 80%;
+    margin: 0 auto;
+	text-shadow: 4px 4px 10px #c5a687;
+}
+ 
+#answer h2 { 
+    display: none;
+}
+
+/*Style rules for footer content*/
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+#submit {
+      margin: 0px auto;
+      display: block;
+      padding: 2%;
+      background-color: #78593a;
+      color: #f6eee4;
+      font-size: 1.25em;
+      border-radius: 10px;
+    }
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 620px), print {
+/*Tablet Viewport: Show tab-desk class, hide mobile class*/
+    .tab-desk .desktop{
+      display: block;
+    }
+
+    .mobile .mobile-tablet{
+      display: none;
+    }
+
+    .mobile-nav {
+      display: none;
+    }
+	
+	.nav-links {
+		display: none;
+	}
+	
+	
+    /*Tablet Viewport: Style rules for nav area*/
+    nav ul {
+  list-style: none;
+  text-align: center;
+}
+    nav li {
+      border-top: none;
+      display: inline-block;
+      font-size: 1.25em;
+      font-family: Geneva, Arial, sans-serif;
+      font-weight: bold;
+    }
+
+    nav li a {
+      padding: 0.5em;
+      display: block;
+      color: #f6eee4;
+      text-decoration: none;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2px;
+      grid-gap: 10px;
+    }
+
+    aside {
+      grid-column: 1 / span 2;
+	  position: sticky;
+    }
+
+/*Tablet Viewport: Style rule for form element*/
+
+    form {
+      width: 70%;
+      margin: 0px auto;
+    }
+
+    #contact #form h2{
+
+    }
+
+/*Style rules for form elements*/
+    fieldset {
+      margin-bottom: 2%;
+    }
+
+    input {
+      margin-bottom: 2%;
+    }
+
+    textarea {
+      margin-bottom: 2%;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
+    label {
+      display: block;
+      padding-top: 2%;
+    }
+  
+	caption {
+		font-size: 2em;
+		text-decoration: underline;
+		font-weight: bold;
+	}
+  
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1000px), print {
+/*Desktop Viewport: Show desktop class, hide mobile-tablet class.*/
+.mobile-tablet {
+  display: none;
+}
+/*Desktop Viewport: Style rules for nav area*/
+  nav li {
+    font-size: 1.5em;
+    display: inline-block;
+  }
+
+  nav li a {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+    opacity: 0.5;
+  }
+
+/*Desktop Viewport: Style rules for main content*/
+  #info ul {
+    margin-left: 5%;
+  }
+
+  .grid {
+    grid-template-columns: 3px;
+    grid-gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
+    font-size: 2em;
+	position: sticky;
+  }
+
+/* Style rules for table */
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0px auto;
+  }
+  caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1%;
+	text-align: left;
+	text-decoration: underline;
+  }
+  th {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+  td {
+    border: 1px solid #2a1f14;
+    padding: 1%;
+  }
+  th {
+    background-color: #2a1f14;
+    color: white;
+    font-size: 1.15em;
+  }
+  tr {
+    background-color: #deccba;
+  }
+
+  /*Desktop Viewport: Style rules for form elements*/
+  form {
+    width: auto;
+  }
+  .form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+  .btn {
+    grid-column: 1 / span 2;
+  }
+
+}
+
+/*Media Query for Large Desktop Viewports*/
+@media screen and (min-width: 1921px) {
+  body {
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main {
+    background-color: #f6eee4;
+  }
+
+  .grid {
+    grid-template-columns: 4px;
+  }
+
+  aside {
+    grid-column: 1 / span 4;
+    font-size: 3em;
+	position:sticky;
+  }
+     
+}
+
+
+.center {
+	text-align: center;
+}
+
+
+/* Style rule for Quiz page components */
+#answer {
+	float: right;
+	width: 30%;
+}
+
+
+#questions {
+	float: left;
+}
+
+/*footer position bc she decided to be weird 
+#page-container {
+  position: relative;
+  min-height: 280vh;
+}
+
+#content-wrap {
+  padding-bottom: 3rem; 
+}
+
+.quizFooter {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  }
+*/
+
+/*footer position bc she decided to be weird (but I decided to do it better) */
+.quizFooter {
+	clear: both;
+}
+
+footer {
+	clear: both;
+}
+
+/*index page additional formatting*/
+#latest {
+	text-align: center;
+}
+
+/*round class for centered image formatted*/
+.round {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Need Help? In-Text Contact Us link formatting*/
+.contactUs {
+	text-decoration: none;
+	color: black;
+}
+
+/*Videos in table height changed so they arent huge...*/
+video {
+	height: 75%;
+	width: 75%;
+}
+
+/*Resizse the one image on AMD Products page*/
+.imgResized {
+	height: 65%;
+	width: 65%;
+}
+
+
+
+/*Terms and Definition Styling*/
+.term {
+  border: 2px solid #ab4d22;
+  /*height: 90%;*/
+  float: left;
+  width: 25%;
+  font-weight: bold;
+  margin: 0px auto;
+  padding: .7%;
+  text-align: center;
+}
+.definition {
+  border: 2px dotted #008a5e;
+  /*height: 100%;*/
+  float: right;
+  width: 92%;
+  padding: .5%;
+}
+
+#endPageComment {
+  border: none;
+  /*height: 100%;*/
+  float: right;
+  width: 100%;
+  font-size:1.5em;
+  padding-bottom: 3%;
+}
+
+.termsHeading {
+	font-size: 2.5em;
+}
+
+#terms {
+	background: linear-gradient(#f6eee4, #78593a);
+}
+
+  caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1%;
+	text-align: left;
+	text-decoration: underline;
+  }
+
+/*Quick Links page styles*/
+
+#linksPage {
+	text-align: center;
+}
+
+section a{
+	text-decoration: none;
+	color: black;
+}
+
+section a:hover{
+	opacity: 0.95;
+	color: #081433;
+}
+
+.underline {
+	text-decoration: underline;
+	font-size: 1.8em;
+}
+
+/*Nth-of-Type for alternating gradients on the QUICK LINKS Page*/
+section:nth-of-type(2) {
+	background-image: linear-gradient(#D0B0A9, #f6eee4);
+}
+
+section:nth-of-type(4) {
+	background-image: linear-gradient(#D0B0A9, #f6eee4);
+}
+
+section:nth-of-type(1) {
+	background-image: linear-gradient(#f6eee4, #D0B0A9);
+}
+
+section:nth-of-type(3) {
+	background-image: linear-gradient(#f6eee4, #D0B0A9);
+}
+
+/*Image Hover opacity change because it's cool*/
+
+img:hover {
+	opacity: 0.95;
+}
+
+/*PRODUCT LIST Style*/
+
+ol {
+	font-size: 2em;
+	padding: 8%
+}
+
+#productList {
+	background-image: linear-gradient(#2a1f10, #f6eee4, #D0B0A9);
+	padding: 0;
+	margin: 0;
+}
+
+.white {
+	color: white;
+	padding-top: 4%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

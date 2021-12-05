@@ -1,0 +1,142 @@
+<!--
+Anna Jaques
+compQuiz.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PC Hardware Components | Hardware Quiz</title>
+<!-- metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Links -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
+<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<body>
+	<div id="page-container">
+	<div id="content-wrap">
+  <div id="wrapper">
+
+<!-- NAVIGATION -->
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+    <div id="nav-links" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="AMDProducts.html">AMD Products</a>
+        <a href="NVIDIAProducts.html">NVIDIA Products</a>
+        <a href="IntelProducts.html">Intel Products</a>
+        <a href="AdditionalProducts.html">Additional Products</a>
+        <a href="compQuiz.html">Hardware Components Quiz</a>
+		<a href="terms.html">Terms & Definitions</a>
+    </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+</nav>
+
+<!-- Page Header -->
+    <header>
+      <div class="tab-desk">
+        <div class="mobile">
+          <h1>&#9000; PC Hardware Components</h1> 
+		    <img src="images/LaptopLogoImage.jpg" alt="Laptop on a couch" height="100" width="100" class="center">
+          <h3>AMD. Intel. NVIDIA. Others</h3>
+        </div>
+      </div>
+    </header>
+  
+   <!-- NAVIGATION for tabdesk -->
+  <nav class="tab-desk">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AMDProducts.html">AMD Products</a></li>
+        <li><a href="NVIDIAProducts.html">NVIDIA Products</a></li>
+        <li><a href="IntelProducts.html">Intel Products</a></li>
+        <li><a href="AdditionalProducts.html">Additional Products</a></li>
+        <li><a href="compQuiz.html">Hardware Components Quiz</a></li>
+		<li><a href="terms.html">Terms & Definitions</a></li>
+      </ul>
+    </nav>
+  
+  <!-- The Main area - the main content on the webpage -->
+    <main>
+
+			<!--
+		  <div id="questions">
+			  <p onclick="ans1()">How can I determine if a baby animal is an orphan?</p>
+			  <p onclick="ans2()">How can I tell if an animal has rabies?</p>
+			  <p onclick="ans3()">I found a baby bird that fell from its nest. Will the parents orphan it if I touch it?</p>
+			  <p onclick="ans4()">How can I volunteer?</p>
+		  </div>
+		  -->
+	<figure>
+	  <img src="images/PCHardware.jpg" alt="PC hardware motherboard">
+	  <figcaption>PC Hardware Components</figcaption>
+	</figure>
+	  
+	  
+	  <!-- Question 1 -->
+	  <div id="questions">
+		<h1>Which computer part is the brain of the computer?</h1>
+          <p onclick="ansCorrect()">The Central Processing Unit (CPU)</p>
+          <p onclick="ansIncorrect()">The Motherboard</p>
+          <p onclick="ansIncorrect()">The Memory (RAM)</p>
+          <p onclick="ansIncorrect()">The Graphics Card</p>
+	  
+	  <!-- Question 2 -->
+		<h1>How many bytes are in a Megabyte?</h1>
+          <p onclick="ansIncorrect()">One Thousand</p>
+          <p onclick="ansIncorrect()">Ten Thousand</p>
+          <p onclick="ansCorrect()">One Million</p>
+          <p onclick="ansIncorrect()">One Hundred</p>
+
+	  <!-- Question 3 -->
+		<h1>Which of the following is not an output device?</h1>
+          <p onclick="ansIncorrect()">Monitor</p>
+          <p onclick="ansCorrect()">Keyboard</p>
+          <p onclick="ansIncorrect()">Printer</p>
+          <p onclick="ansIncorrect()">Speakers</p>
+
+	  <!-- Question 4 -->
+		<h1>Which of the following is NOT hardware of a computer?</h1>
+          <p onclick="ansIncorrect()">The Central Processing Unit (CPU)</p>
+          <p onclick="ansCorrect()">Windows</p>
+          <p onclick="ansIncorrect()">Keyboard</p>
+          <p onclick="ansIncorrect()">The Graphics Card</p>
+
+	  <!-- Question 5 -->
+		<h1>A microprocessor is used in what type of computer?</h1>
+          <p onclick="ansIncorrect()">ENIAC</p>
+          <p onclick="ansCorrect()">A personal computer</p>
+          <p onclick="ansIncorrect()">A mini computer</p>
+          <p onclick="ansIncorrect()">A mainframe computer</p>
+
+	 </div>
+
+		<!-- Where correct or incorrect is displayed -->
+      <div id="answer" class="sticky">
+        <h2>Answer:</h2>
+        <aside></aside>
+      </div>
+
+    </main>
+  </div>
+  
+  <!-- Page Footer -->
+    <footer class="quizFooter">
+      <p>&copy; Copyright 2021. All Rights Reserved. Created by Anna Jaques</p>
+      <p><a href="contact.html">Contact Us &middot; </a><a href="links.html">Quick Links &middot; </a><a href="products.html">Product List</a></p>
+    </footer>
+  </div>
+</div>
+
+  <script src="scripts/script.js"></script>
+</body>

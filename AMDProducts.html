@@ -1,0 +1,160 @@
+<!--
+Anna Jaques
+AMDProducts.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>PC Hardware Components: Template</title>
+<!-- metadata -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Links -->
+<link href="css/styles.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Emblema+One&family=Lora&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">   
+<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+<body>
+  <div id="wrapper">
+
+<!-- NAVIGATION -->
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav">
+    <div id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="AMDProducts.html">AMD Products</a>
+        <a href="NVIDIAProducts.html">NVIDIA Products</a>
+        <a href="IntelProducts.html">Intel Products</a>
+        <a href="AdditionalProducts.html">Additional Products</a>
+        <a href="compQuiz.html">Hardware Components Quiz</a>
+		<a href="terms.html">Terms & Definitions</a>
+    </div>
+        <a class="nav-icon" onclick="menu()">
+            <div id="icon">&#9776;</div>
+        </a>
+</nav>
+
+<!-- Page Header -->
+    <header>
+      <div class="tab-desk">
+        <div class="mobile">
+          <h1>&#9000; PC Hardware Components</h1> 
+		    <img src="images/LaptopLogoImage.jpg" alt="Laptop on a couch" height="100" width="100" class="center">
+          <h3>AMD. Intel. NVIDIA. Others</h3>
+        </div>
+      </div>
+    </header>
+  
+  <!-- NAVIGATION for tabdesk -->
+
+  <nav class="tab-desk">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AMDProducts.html">AMD Products</a></li>
+        <li><a href="NVIDIAProducts.html">NVIDIA Products</a></li>
+        <li><a href="IntelProducts.html">Intel Products</a></li>
+        <li><a href="AdditionalProducts.html">Additional Products</a></li>
+        <li><a href="compQuiz.html">Hardware Components Quiz</a></li>
+		<li><a href="terms.html">Terms & Definitions</a></li>
+      </ul>
+    </nav>
+  
+  <!-- The Main area - the main content on the webpage -->
+    <main id="content">
+      <h2 class="centerText">All of the products listed here are available on <a href="https://www.amd.com/en" target="_blank" class="contactUs">AMD's website</a>!! Go check them out!</h2>
+      <div class="mobile-tablet">
+        <h3>Product Prices</h3>
+        <p>AMD Ryzen 5 5600X: $279.99</p>
+        <p>AMD Ryzen 7 5800X: $449.00</p>
+        <p>AMD Ryzen 9 5900X: $549.00</p>
+        <p>AMD Radeon RX 590 Graphics: $270</p>
+        <p>AMD Radeon RX 6900 XT Graphics: $700</p>
+        <p>All prices for the AMD products listed on this page.</p>
+      </div>
+
+		
+      <div id="partner" class="desktop">
+        <table>
+          <caption>Processors</caption>
+		  <col style="width:20%">
+		  <col style="width:10%">
+		  <col style="width:35%">
+		  <col style="width:35%">
+          <tr><!-- Row 1, Table Head -->  
+            <th>Processor</th>
+            <th>Dollar Amount</th>
+            <th>Details</th>
+            <th>Image or Video</th>
+          </tr> 
+          <tr><!-- Row 2 -->  
+            <td>AMD Ryzen 5 5600X</td>
+            <td>$279.99</td>
+            <td>Six core, twelve thread processor with max boost clock up to 4.6GHz. Base clock 3.7GHz. AM4 CPU sprocket, and a max operating temperature of 95&deg; Celcius. Discrete Graphics Card required.</td>
+            <td><img src="images/AMD_Ryzen_5_5600X.jpg" alt="AMD Ryzen 5 5600X CPU"></td>
+          </tr> 
+          <tr><!-- Row 3 -->  
+            <td>AMD Ryzen 7 5800X</td>
+            <td>$449.00</td>
+            <td>Eight core, sixteen thread processor with max boost clock up to 4.7GHz. Base clock 3.8GHz. AM4 CPU sprocket, and a max operating temperature of 90&deg; Celcius. Discrete Graphics Card required.</td>
+            <td><img src="images/AMD_Ryzen_7_5800X.jpg" alt="AMD Ryzen 7 5800X CPU" class="imgResized"></td>
+          </tr> 
+          <tr><!-- Row 4 -->  
+            <td>AMD Ryzen 9 5900X</td>
+            <td>$549.00</td>
+            <td>Twelve core, twenty-four thread processor with max boost clock up to 4.8GHz. Base clock 3.7GHz. AM4 CPU sprocket, and a max operating temperature of 90&deg; Celcius. Discrete Graphics Card required.</td>
+            <td> <!-- Video -->
+			<video controls poster="images/cpuImage.jpg">
+            <source src="media/AMDRyzen5000Series.mp4" type="video/mp4">
+            <source src="media/AMDRyzen5000Series.webm" type="video/webm">
+            <p>Legacy browsers might not be compatable with this media.</p>
+			<!--<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English">-->
+			</video></td>
+          </tr> 
+        </table>
+		
+		<table>
+          <caption>Graphics Cards</caption>
+		  <col style="width:20%">
+		  <col style="width:10%">
+		  <col style="width:35%">
+		  <col style="width:35%">
+          <tr><!-- Row 1 -->  
+            <th>Graphics Card</th>
+            <th>Dollar Amount</th>
+            <th>Details</th>
+            <th>Image or Video</th>
+          </tr> 
+          <tr><!-- Row 2 -->  
+            <td>AMD Radeon RX 590 Graphics</td>
+            <td>$270</td>
+            <td>8Gbps Memory. 36 Compute Units. Base Frequency of 1469MHz, Boost Frequency of 1545MHz. 1080p graphics, VR Ready, AMD FreeSync available.</td>
+            <td><img src="images/AMD_Radeon_RX_590.png" alt="AMD Radeon RX 590 Graphics Card"></td>
+          </tr> 
+          <tr><!-- Row 3 -->  
+            <td>AMD Radeon RX 6900 XT Graphics</td>
+            <td>$700</td>
+            <td>16Gbps Memory. 80 Compute Units. Base Frequency of 2015MHz, Boost Frequency of 2250MHz. 4K graphics, VR Ready, AMD FreeSync available.</td>
+            <td><img src="images/RX6900XT.jpg" alt="AMD Radeon RX 6900 XT Graphics Card"></td>
+          </tr> 
+        </table>
+		
+      </div>
+
+    </main>
+  
+  <!-- Page Footer -->
+
+    <footer>
+      <p>&copy; Copyright 2021. All Rights Reserved. Created by Anna Jaques</p>
+      <p><a href="contact.html">Contact Us &middot; </a><a href="links.html">Quick Links &middot; </a><a href="products.html">Product List</a></p>
+    </footer>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
